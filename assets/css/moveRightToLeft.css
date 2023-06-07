@@ -1,0 +1,30 @@
+@keyframes moveRightToLeft {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  .image-row {
+    position: relative;
+    white-space: nowrap;
+    animation: moveRightToLeft 10s linear infinite;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+  }
+  
+  .image-row .col {
+    flex: 0 0 calc(100% / 3); /* Adjust the number of images per row by changing the denominator */
+    max-width: calc(100% / 3); /* Adjust the number of images per row by changing the denominator */
+  }
+  
+  @media (max-width: 767px) {
+    .image-row .col {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+  }
+  
