@@ -279,7 +279,6 @@ a {
 }
 
 .slider .slide-track-2 {
-  margin-top: 10px;
   animation: scroll-r 30s linear infinite;
   display: flex;
   width: 3500px;
